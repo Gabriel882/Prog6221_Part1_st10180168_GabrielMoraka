@@ -136,7 +136,7 @@ namespace Prog6221_Part1_st10180168_GabrielMoraka
                 // This is where the clearing of the quantities is 
                 for (int i = 0; i < quantities.Length; i++)
                 {
-                    
+
                     Console.Write("\nYou have selected the RESET QUANTITES OPTIONS\n" +
                         "Would you like to reset the quantities to their orignal vaules:\n" +
                         "Press 1 for YES\n" +
@@ -144,14 +144,14 @@ namespace Prog6221_Part1_st10180168_GabrielMoraka
                     int yesOrNo = Convert.ToInt32(Console.ReadLine());
 
 
-                    if (yesOrNo == 1) 
+                    if (yesOrNo == 1)
                     {
                         Console.Write("\nThe quantites have been changed back to thier original values\n");
                         quantities[i] /= 2;
 
                     }
 
-                    else if (yesOrNo == 2) 
+                    else if (yesOrNo == 2)
                     {
                         Console.WriteLine("The quantities will not be changed");
                     }
@@ -162,10 +162,6 @@ namespace Prog6221_Part1_st10180168_GabrielMoraka
                     }
 
                 }
-
-                 
-
-
 
             }
 
