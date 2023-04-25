@@ -12,17 +12,19 @@ namespace RecipeApplication
             MethodsAndFunctions recipe = new MethodsAndFunctions();
             while (true)
             {
-                Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine("********************************* The menu *********************************\n" +
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("********************************* The Menu *********************************\n" +
                     "Press 1 to enter recipe details");
-                Console.WriteLine("Press 2 to display the recipe");
-                Console.WriteLine("Press 3 to scale recipe");
+                Console.WriteLine("Press 2 to display the full recipe");
+                Console.WriteLine("Press 3 to scale the quantites");
                 Console.WriteLine("Press 4 to reset quantities");
                 Console.WriteLine("Press 5 to clear recipe");
                 Console.WriteLine("Press 6 to exit\n" +
                     "********************************************************************");
                 Console.ResetColor();
 
+
+                // Using the switch case method to prompt the user to select a number in the menu
                 string selection = Console.ReadLine();
                 switch (selection)
                 { 
@@ -35,11 +37,11 @@ namespace RecipeApplication
                     break;
                 case "3":
                     Console.Write("Enter scaling factor as a number (half 1, double 2, or triple 3): ");
-                    double factor = int.Parse(Console.ReadLine());
-                    recipe.ScaleQuantity((int)factor);
+                    int factor = int.Parse(Console.ReadLine());
+                    recipe.ScalingQuantities((int)factor);
                     break;
                 case "4":
-                    recipe.ResetQuantities();
+                    recipe.ResettingTheQuantities();
                     break;
                 case "5":
                     recipe.ClearTheRecipe();
@@ -47,12 +49,12 @@ namespace RecipeApplication
                         
                 case "6":
                         Console.ForegroundColor = ConsoleColor.Blue;
-                        Console.WriteLine("Exiting program...");
+                        Console.WriteLine("The program is exiting...");
                         Console.ResetColor();
                     return;
 
                 default:
-                    Console.WriteLine("Invalid choice. Please enter a valid choice.");
+                    Console.WriteLine("Invalid option. Please enter a valid option.");
                     break;
                 }
             }
