@@ -137,8 +137,8 @@ namespace Prog6221_Part1_st10180168_GabrielMoraka
                 for (int i = 0; i < quantities.Length; i++)
                 {
                     
-                    Console.Write("\nYou have selected the reset quantities option\n" +
-                        "Would you like to reset the quantities:\n" +
+                    Console.Write("\nYou have selected the RESET QUANTITES OPTIONS\n" +
+                        "Would you like to reset the quantities to their orignal vaules:\n" +
                         "Press 1 for YES\n" +
                         "press 2 for NO\n");
                     int yesOrNo = Convert.ToInt32(Console.ReadLine());

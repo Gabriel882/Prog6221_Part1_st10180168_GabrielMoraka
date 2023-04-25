@@ -48,7 +48,7 @@ namespace RecipeApplication
                     break;
                         
                 case "6":
-                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
                         Console.WriteLine("The program is exiting...");
                         Console.ResetColor();
                     return;
