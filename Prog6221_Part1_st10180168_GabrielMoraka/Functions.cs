@@ -12,7 +12,7 @@ namespace Prog6221_Part1_st10180168_GabrielMoraka
     public    class MethodsAndFunctions
         {
             public string[] ingredients;
-            public int[] quantities;
+            public double[] quantities;
             public string[] units;
             public string[] steps;
 
