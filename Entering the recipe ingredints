@@ -1,0 +1,45 @@
+ public    class MethodsAndFunctions
+        {
+            public string[] ingredients;
+            public int[] quantities;
+            public string[] units;
+            public string[] steps;
+
+            public MethodsAndFunctions()
+            {
+                // 
+                ingredients = new string[0];
+                quantities = new int[0];
+                units = new string[0];
+                steps = new string[0];
+            }
+
+            public void ingredientDetails()
+            {
+                // This prompts the user to enter the number of ingredients
+                Console.Write("Enter the number of ingredients: ");
+                int numberOfIngredients = int.Parse(Console.ReadLine());
+
+                // Initialize the arrays with the correct size
+                ingredients = new string[numberOfIngredients];
+                quantities = new int[numberOfIngredients];
+                units = new string[numberOfIngredients];
+
+                // This is where the user enters the details for the recipe or the ingredient
+                for (int i = 0; i < numberOfIngredients; i++)
+                {
+                    Console.WriteLine($"Enter details for ingredient #{i + 1}:");
+                    Console.Write("Name: ");
+
+                    ingredients[i] = Console.ReadLine();
+                    Console.Write("Quantity: ");
+
+                    quantities[i] = int.Parse(Console.ReadLine());
+                    Console.Write("Unit of measurement: ");
+                    units[i] = Console.ReadLine();
+
+
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.Write("The ingredient you entered has been successfully captured\n\n");
+                    Console.ResetColor();
+                }
