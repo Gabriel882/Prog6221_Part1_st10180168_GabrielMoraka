@@ -1,0 +1,29 @@
+ public void ClearTheRecipe()
+            {
+                Console.Write("Press 1 to clear the recipe\n" +
+                    "Press 2 to cancel\n");
+                int clearData = Convert.ToInt32(Console.ReadLine());
+
+                if (clearData == 1)
+                {
+
+                    // This is the reset function to remove values in the array and make it empty
+                   ingredients = new string[0];
+                   quantities = new int[0];
+                   units = new string[0];
+                   steps = new string[0];
+
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.Write("The recipe has been cleared\n");
+                Console.ResetColor(); 
+                }
+
+
+                else if (clearData == 2) 
+                {
+                    Console.ForegroundColor= ConsoleColor.DarkRed;
+                    Console.Write("The Recipe is still saved back to the menu");
+                    Console.ResetColor();
+                }
+            }
+        }

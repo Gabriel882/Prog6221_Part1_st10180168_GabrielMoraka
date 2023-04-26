@@ -1,0 +1,24 @@
+ public void fullDisplay()
+            {
+                // Displaying the ingredients and quantities 
+                Console.ForegroundColor= ConsoleColor.DarkYellow;
+                Console.WriteLine("\n\n************** The Full Recipe **************\n");
+                Console.ResetColor();
+                Console.WriteLine("The Ingredients are as follows:\n" +
+                    "You will need:\n");
+
+
+                for (int i = 0; i < ingredients.Length; i++)
+                {
+                    Console.WriteLine($"- {quantities[i]} {units[i]} of {ingredients[i]}");
+                }
+
+                // Display the description in the steps
+                Console.WriteLine("\nThe Steps for this recipe are as follows:");
+                for (int i = 0; i < steps.Length; i++)
+                {
+                    Console.WriteLine($" For Step {i + 1}: {steps[i]}");
+                    
+                }
+                Console.WriteLine("\n");
+            }

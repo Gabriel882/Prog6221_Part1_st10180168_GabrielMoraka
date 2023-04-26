@@ -1,0 +1,29 @@
+ public void ScalingQuantities(int factor)
+            {
+                // This is the scaling factor multipying the quantities
+                for (int i = 0; i < quantities.Length; i++)
+                {
+
+                    if (factor == 1)
+                    {
+                        quantities[i] /= 2;
+                        Console.Write("The quantites are half\n");
+                    }
+
+                    else if (factor == 2) 
+                    {
+
+                        quantities[i] *= 2;
+                        Console.Write("The quantites have been doubled\n");
+
+                    }
+                    
+                    else if (factor == 3)
+                    {
+                        quantities[i] *= 3;
+                        Console.Write("The quantites have tripled\n");
+                    }
+
+
+                }
+            }
